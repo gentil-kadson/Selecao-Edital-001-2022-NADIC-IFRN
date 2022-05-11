@@ -1,4 +1,4 @@
-import { Box, Heading, Text, Image, Button, Flex, VStack } from "@chakra-ui/react"
+import { Box, Heading, Text, Image, Button, Flex, VStack, Grid, GridItem } from "@chakra-ui/react"
 
 import icon from "../../assets/votify-icon.png"
 import downArrow from "../../assets/down-arrow-green.svg"
@@ -7,47 +7,45 @@ import peopleVotingBrazil from "../../assets/people-voting-brazil-round.svg"
 
 const LandingPage = () => {
     return(
-        <Flex gap={20} flexDirection="column" justifyContent="space-between" maxW="full" maxH="full" alignItems="center">
-            <VStack gap="25px">
-                <Box boxSize={86} marginTop="70px">
+        <>
+            <VStack gap="1.5rem">
+                <Box boxSize="6rem" marginTop="7rem">
                     <Image src={icon} />
                 </Box>
 
-                <Heading fontSize="48px" color="#9AE6B4">
+                <Heading color="green.200">
                     Votify - Democracia Para Todos
                 </Heading>
-            </VStack>
-            
 
-            <Flex flexDirection="column" justifyContent="center" alignItems="center" gap={10}>
+                <Text fontWeight="bold" fontSize="20px" >Seu voto <Text fontWeight="bold" fontSize="20px"  display="inline-block" color="green.200">PODE</Text> fazer a diferença! Se junta aí!</Text>
 
-                <Heading>Seu voto <Text display="inline-block" width="fit-content" color="#9AE6B4">PODE</Text> fazer a diferença! Se junta aí!</Heading>
-
-                <Box boxSize={65}>
+                <Box boxSize="3rem">
                     <Image src={downArrow} />
                 </Box>
+            </VStack>  
 
-            </Flex>
+            <Grid templateColumns="3fr 1fr 3fr">
+                <GridItem w="fit-content" h="fit-content">
+                    <Box boxSize="40rem">
+                        <Image src={peopleVoting} />
+                    </Box>
+                </GridItem>
 
-            <Flex flexDirection="row" justifyContent="space-between" gap="5px">
-                <Box boxSize="500px">
-                    <Image src={peopleVoting} />
-                </Box>
+                <GridItem w="fit-content" h="fit-content" marginTop="6rem">
+                    <Button alignSelf="center" bg="green.200" color="white" _hover={{ color: "white", background: "green.400" }} padding="1.5rem 3rem" borderRadius="8px">
+                        QUERO VOTAR!
+                    </Button>
+                </GridItem>
 
-                <Button paddingTop="30px" paddingBottom="30px" paddingLeft="70px" paddingRight="70px" fontSize="24px" bg="#9AE6B4" color="#FFF" _hover={{
-                    color: "#FFF",
-                    background: "green.300" 
-                }}>
-                    QUERO VOTAR!
-                </Button>
-
-                <Box boxSize="500px">
-                    <Image src={peopleVotingBrazil} />
-                </Box>
-            </Flex>
-
-        </Flex>
-        
+                <GridItem w="fit-content" h="fit-content" marginLeft="11rem">
+                    <Box height="35rem" width="30rem">
+                        <Image src={peopleVotingBrazil} />
+                    </Box>
+                </GridItem>
+            </Grid>
+        </>
+              
+    
     );
 }
 
