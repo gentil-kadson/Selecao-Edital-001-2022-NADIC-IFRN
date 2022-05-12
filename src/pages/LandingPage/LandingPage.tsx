@@ -1,5 +1,8 @@
 import { Box, Heading, Text, Image, Button, Flex, VStack, Grid, GridItem } from "@chakra-ui/react"
 
+import { Link } from "react-router-dom"
+
+//Images import 
 import icon from "../../assets/votify-icon.png"
 import downArrow from "../../assets/down-arrow-green.svg"
 import peopleVoting from "../../assets/people-voting.jpg"
@@ -32,9 +35,9 @@ const LandingPage = () => {
                 </GridItem>
 
                 <GridItem w="fit-content" h="fit-content" marginTop="6rem">
-                    <Button alignSelf="center" bg="green.200" color="white" _hover={{ color: "white", background: "green.400" }} padding="1.5rem 3rem" borderRadius="8px">
+                    <Link to="/homepage"><Button alignSelf="center" bg="green.200" color="white" _hover={{ color: "white", background: "green.400" }} padding="1.5rem 3rem" borderRadius="8px">
                         QUERO VOTAR!
-                    </Button>
+                    </Button></Link>
                 </GridItem>
 
                 <GridItem w="fit-content" h="fit-content" marginLeft="11rem">
