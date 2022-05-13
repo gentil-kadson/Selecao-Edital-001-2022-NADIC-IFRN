@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import api from "../../api/api"
 
 import RegisterCandidate from "../../components/RegisterCandidate/RegisterCandidate";
+import RegisterElection from "../../components/RegisterElection/RegisterElection";
 
 const Homepage = () => {
     const [ allData, setAllData ] = useState<any[]>([])
@@ -37,7 +38,7 @@ const Homepage = () => {
                         
                     <TabPanel>
                         <Box width="95%" height={600} bg="#EDF2F7" borderRadius="20px">
-
+                            <RegisterElection /> 
                         </Box>
                     </TabPanel>
 
