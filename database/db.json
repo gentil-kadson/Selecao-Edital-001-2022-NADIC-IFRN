@@ -1,3 +1,18 @@
 {
-    "candidates": []
+  "candidates": [
+    {
+      "name": "Gentil Kadson",
+      "cpf": "125.961.814-52",
+      "birthdate": "2002-07-12",
+      "address": "Travessa Raul Pessoa, 44",
+      "id": 1
+    },
+    {
+      "name": "Gabriel Dezonesto",
+      "cpf": "123.456.789-10",
+      "birthdate": "1997-10-31",
+      "address": "Rua Não Sei O Nome, 33",
+      "id": 2
+    }
+  ]
 }
