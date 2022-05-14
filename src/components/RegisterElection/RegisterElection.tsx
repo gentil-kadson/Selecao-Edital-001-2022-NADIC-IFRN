@@ -70,6 +70,8 @@ const RegisterElection = () => {
 
                 setTimeout(() => {
                     setShowAlert(false)
+
+                    window.location.reload()
                 }, 3000)
             }
         })

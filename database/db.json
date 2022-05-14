@@ -1,43 +1,4 @@
 {
-  "candidates": [
-    {
-      "name": "Gentil Kadson",
-      "cpf": "125.961.814-52",
-      "birthdate": "2002-07-12",
-      "address": "Travessa Raul Pessoa, 44",
-      "id": 1
-    },
-    {
-      "name": "Gabriel Dezonesto",
-      "cpf": "123.456.789-10",
-      "birthdate": "1997-10-31",
-      "address": "Rua Não Sei O Nome, 33",
-      "id": 2
-    },
-    {
-      "name": "Lucas Rowbinho",
-      "cpf": "456.789.101-11",
-      "birthdate": "1998-07-12",
-      "address": "Rua Intankavel o Brasil, 55",
-      "id": 3
-    }
-  ],
-  "elections": [
-    {
-      "title": "Governador do Rio Grande do Norte",
-      "date": "10-31/12-25",
-      "amountOfCandidates": 2,
-      "candidates": [
-        {
-          "name": "Gentil Kadson",
-          "id": "1"
-        },
-        {
-          "name": "Lucas Rowbinho",
-          "id": "3"
-        }
-      ],
-      "id": 1
-    }
-  ]
+  "candidates": [],
+  "elections": []
 }

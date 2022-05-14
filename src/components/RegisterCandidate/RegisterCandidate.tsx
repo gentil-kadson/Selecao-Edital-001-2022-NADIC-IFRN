@@ -36,6 +36,8 @@ const RegisterCandidate = () => {
 
             setTimeout(() => {
                 setIsCandidatePosted(false)
+
+                window.location.reload()
             }, 3000)
         })
     }
